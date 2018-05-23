@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grad"
+    tools:context="com.example.samir.accueil.Activity.Inscription">
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="120dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="39dp"
+        android:contentDescription="@drawable/logo"
+        app:srcCompat="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/Nom"
+        android:layout_width="190dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp"
+        android:background="#11000000"
+        android:ems="10"
+        android:hint="Nom"
+        android:inputType="textPersonName"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/Prenom"
+        android:layout_width="190dp"
+        android:layout_height="20dp"
+        android:layout_alignStart="@+id/Nom"
+        android:layout_below="@+id/Nom"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="Prenom"
+        android:background="#11000000"
+        android:textSize="16sp"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/Pseudo"
+        android:layout_width="190dp"
+        android:layout_height="20dp"
+        android:layout_alignStart="@+id/Nom"
+        android:layout_below="@+id/Prenom"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="Pseudo"
+        android:background="#11000000"
+        android:textSize="16sp"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/E_mail"
+        android:layout_width="190dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/Pseudo"
+        android:layout_alignStart="@+id/Nom"
+        android:layout_marginTop="15dp"
+        android:background="#11000000"
+        android:ems="10"
+        android:hint="E-mail"
+        android:inputType="textEmailAddress"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/Age"
+        android:layout_width="190dp"
+        android:layout_height="20dp"
+        android:layout_alignStart="@+id/Nom"
+        android:layout_below="@+id/E_mail"
+        android:layout_marginTop="15dp"
+        android:background="#11000000"
+        android:ems="10"
+        android:hint="Age"
+        android:inputType="number"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/MDP"
+        android:layout_width="190dp"
+        android:layout_height="20dp"
+        android:layout_alignStart="@+id/Nom"
+        android:layout_below="@+id/Age"
+        android:layout_marginTop="19dp"
+        android:background="#11000000"
+        android:ems="10"
+        android:hint="Mot de passe"
+        android:inputType="textPassword"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/Valider"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/MDP"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:background="@color/agebg"
+        android:text="Valider"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/DejaInscrit"
+        android:layout_width="80dp"
+        android:layout_height="11dp"
+        android:layout_below="@+id/Valider"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="#10000000"
+        android:text="Déjà inscrit ?"
+        android:textSize="10sp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grad"
+    tools:context=".Activity.AjoutReseau">
+
+    <EditText
+        android:id="@+id/NomReseau"
+        android:layout_width="190dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="171dp"
+        android:background="#11000000"
+        android:ems="10"
+        android:hint="Nom"
+        android:inputType="textPersonName"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/Coordonnees"
+        android:layout_width="190dp"
+        android:layout_height="30dp"
+        android:layout_alignStart="@+id/NomReseau"
+        android:layout_below="@+id/NomReseau"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="Coordonnées"
+        android:background="#11000000"
+        android:textSize="16sp"
+        android:inputType="textPersonName" />
+
+    <Spinner
+        android:id="@+id/MotCle"
+        android:layout_width="190dp"
+        android:layout_height="30dp"
+        android:layout_alignStart="@+id/NomReseau"
+        android:layout_below="@+id/Coordonnees"
+        android:layout_marginTop="15dp"/>
+
+    <Switch
+        android:id="@+id/Prive"
+        android:layout_width="120dp"
+        android:layout_height="10dp"
+        android:onClick="onChecked"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/MotCle"
+        android:layout_centerHorizontal="true"
+        android:text="Privé" />
+
+    <Button
+        android:id="@+id/ValiderReseau"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:background="@color/agebg"
+        android:layout_below="@+id/Prive"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Valider"
+        android:textSize="16sp" />
+
+
+
+</RelativeLayout>
